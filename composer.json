@@ -1,0 +1,17 @@
+{
+    "name": "kamran/design-patterns",
+    "description": "Most commonly used design patterns",
+    "authors": [
+        {
+            "name": "kamran ullah",
+            "email": "kamranullah@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+
+    	"psr-4": {
+    		"Pattern\\": "src/"
+    	}
+    }
+}
