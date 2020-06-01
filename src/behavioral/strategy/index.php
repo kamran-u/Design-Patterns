@@ -21,7 +21,31 @@ $hash = Strategy::initialize($data, $algo)->generateHash()->getHash();
 echo "<h4>MD5</h4>
 		<p>
 			<strong>Data:</strong>{$data}<br>
-			<strong>Hash:</strong>{$hash}</p><hr>";
+			<strong>Hash:</strong>{$hash}</p><br>";
+
+/********* BCrypt **********/
+$data = 'Hash me with BCrypt';
+$algo = new BCrypt();
+$hash = Strategy::initialize($data, $algo)->generateHash()->getHash();
+
+echo "<h4>BCrypt</h4>
+		<p>
+			<strong>Data:</strong>{$data}<br>
+			<strong>Hash:</strong>{$hash}</p><br>";
+
+
+/********* HMAC **********/
+$data = 'Hash me with HMAC';
+$algo = new BCrypt();
+$hash = Strategy::initialize($data, $algo)->generateHash()->getHash();
+
+echo "<h4>HMAC</h4>
+		<p>
+			<strong>Data:</strong>{$data}<br>
+			<strong>Hash:</strong>{$hash}</p><br>";			
+
 ?>
-	</body>
+
+
+/</body>
 </html>
